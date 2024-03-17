@@ -116,7 +116,6 @@ nav > button {
   width: 100%;
   justify-content: center;
   margin-top: 10vh;
-  border: 3px solid black;
 }
 .landing-page-buttons > a > button {
   background-color: white;
