@@ -37,6 +37,7 @@ nav > div > a {
   margin-left: 5vw;
   font-weight: 300;
   font-size: 0.9em;
+  transition: all;
 }
 nav > div > a:hover {
   border-bottom: 2px solid black;
@@ -115,13 +116,15 @@ nav > button {
   width: 100%;
   justify-content: center;
   margin-top: 10vh;
+  border: 3px solid black;
 }
 .landing-page-buttons > a > button {
   background-color: white;
   color: black;
   border: 0.2rem solid black;
   width: 15vw;
-  height: 8vh;
+  height: max-content;
+  padding: 0.3rem 0;
   font-family: "CocoSharp Trial", sans-serif;
   font-weight: 900;
   font-size: 1em;
@@ -159,24 +162,22 @@ nav > button {
   margin-bottom: 5vh;
   font-weight: 900;
 }
-.ig-ad > button {
-  width: 35%;
-  height: 8vh;
+.ig-ad > a > button {
+  width: 100%;
+  height: max-content;
   font-family: "CocoSharp Trial", sans-serif;
   color: white;
   background-color: black;
-  border: 0.2rem solid black;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 1000;
+  padding: 0.3rem 1.5rem;
 }
-.ig-ad > button > span {
-  font-size: 2em;
-}
-.ig-ad > button:hover {
+.ig-ad > a > button:hover {
   background-color: black;
   color: white;
   border: black;
@@ -231,9 +232,6 @@ footer > h6 {
   .landing-page-image > img {
     width: 90%;
   }
-  .ig-ad > button {
-    width: 50%;
-  }
 }
 @media screen and (max-width: 650px) {
   nav > img {
@@ -253,21 +251,27 @@ footer > h6 {
     height: max-content;
     text-align: center;
   }
+  main {
+    width: 90%;
+  }
   .landing-page-text {
-    width: 80%;
+    width: 100%;
     margin-bottom: 5vh;
   }
   .landing-page-text > h2 {
     width: 100%;
-    font-size: 1em;
+    /* font-size: 1em; */
+  }
+  .landing-page-image {
+    width: 100%;
   }
   .landing-page-image > img {
-    width: 50%;
+    width: 80%;
   }
   .ig-ad > h3 {
     font-size: 1em;
   }
-  .ig-ad > button {
+  .ig-ad > a > button {
     font-size: 0.9em;
   }
 }
@@ -293,16 +297,15 @@ footer > h6 {
     width: 110%;
     font-weight: 800;
   }
-  .ig-ad > button {
-    width: 60%;
+  .landing-page-image > img {
+    width: 90%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 390px) {
   .ig-ad > h3 {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
-  .ig-ad > button {
-    width: 60%;
+  .ig-ad > a > button {
     font-size: 0.8em;
   }
 }
@@ -317,19 +320,12 @@ footer > h6 {
     width: 100%;
   }
   .landing-page-text > h2 {
-    font-size: 0.9em;
   }
   .landing-page-image > img {
-    width: 110%;
+    width: 100%;
   }
   .landing-page-buttons > a > button {
-    width: 45vw;
     font-weight: 800;
-  }
-}
-@media screen and (max-width: 360px) {
-  main {
-    width: 100%;
   }
 }
 @media screen and (max-width: 270px) {
@@ -343,5 +339,7 @@ footer > h6 {
   }
   .no-show {
     display: inline-flex;
+    text-align: center;
+    font-family: "Azonix", sans-serif;
   }
 }
