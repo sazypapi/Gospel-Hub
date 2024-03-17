@@ -1,0 +1,347 @@
+@import url("https://fonts.cdnfonts.com/css/azonix");
+@import url("https://fonts.cdnfonts.com/css/cocosharp-trial");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+/* NAVBAR */
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 10vh;
+}
+nav > img {
+  width: 4%;
+}
+nav > div > a {
+  text-decoration: none;
+  font-family: "Azonix", sans-serif;
+  color: black;
+  margin-left: 5vw;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+nav > div > a:hover {
+  border-bottom: 2px solid black;
+}
+/* PHONE NAVBAR */
+.big {
+  height: 100vh;
+  width: 70%;
+  position: fixed;
+  top: 0;
+  margin-left: 10%;
+  right: -90%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: gainsboro;
+  transition: 0.3s ease;
+}
+.big.active {
+  right: 0;
+}
+.big > a {
+  font-family: "Azonix", sans-serif;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 4vh;
+}
+.big > p {
+  font-family: "Azonix", sans-serif;
+  text-align: center;
+  margin-top: 50vh;
+}
+.remove-hamburger {
+  margin-top: -3vh;
+  background: none;
+  border: none;
+  font-weight: 1000;
+  font-size: 2em;
+  margin-bottom: 5vh;
+  text-align: right;
+}
+nav > button {
+  background: none;
+  border: none;
+  font-weight: 1000;
+  font-size: 3em;
+  display: none;
+}
+/* LANDING PAGE */
+.landing-page {
+  margin-top: 5vh;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-page-text {
+  flex: 60%;
+  font-family: "Azonix", sans-serif;
+}
+.landing-page-text > h2 {
+  line-height: 5vh;
+  width: 70%;
+}
+.landing-page-image {
+  flex: 40%;
+}
+.landing-page-image > img {
+  width: 100%;
+}
+/* LANDING PAGE BUTTONS */
+.landing-page-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.landing-page-buttons > a > button {
+  background-color: white;
+  color: black;
+  border: 0.2rem solid black;
+  width: 15vw;
+  height: 8vh;
+  font-family: "CocoSharp Trial", sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+  transition: all;
+  transition-duration: 0.3s;
+}
+.landing-page-buttons > a > button:hover {
+  background-color: black;
+  color: white;
+}
+#landing-page-button {
+  margin-right: 2vw;
+}
+#landing-page-button-2 {
+  margin-left: 2vw;
+}
+/* IG AD */
+.ig-ad {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  justify-content: space-around;
+  background-image: linear-gradient(to bottom right, #646464, #888888, #959595);
+  padding: 1rem;
+  border-radius: 5px;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+.ig-ad > h3 {
+  font-family: "CocoSharp Trial", sans-serif;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5vh;
+  font-weight: 900;
+}
+.ig-ad > button {
+  width: 35%;
+  height: 8vh;
+  font-family: "CocoSharp Trial", sans-serif;
+  color: white;
+  background-color: black;
+  border: 0.2rem solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 1.1em;
+  font-weight: 1000;
+}
+.ig-ad > button > span {
+  font-size: 2em;
+}
+.ig-ad > button:hover {
+  background-color: black;
+  color: white;
+  border: black;
+}
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2rem 2rem 0;
+}
+footer > h3 {
+  font-family: "CocoSharp Trial", sans-serif;
+  border-bottom: silver 0.5vh solid;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+footer > section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+footer > section > a > img {
+  width: 25%;
+}
+footer > h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.no-show {
+  display: none;
+}
+/* MEDIA QUERY  */
+@media screen and (max-width: 900px) {
+  .landing-page-buttons > a > button {
+    width: 20vw;
+  }
+}
+@media screen and (max-width: 730px) {
+  .landing-page-text > h2 {
+    font-size: 1.2em;
+    width: 90%;
+  }
+  .landing-page-image > img {
+    width: 90%;
+  }
+  .ig-ad > button {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  nav > img {
+    width: 5%;
+  }
+  nav > div > a {
+    font-size: 0.7em;
+  }
+  .landing-page-buttons > a > button {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 560px) {
+  .landing-page {
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    text-align: center;
+  }
+  .landing-page-text {
+    width: 80%;
+    margin-bottom: 5vh;
+  }
+  .landing-page-text > h2 {
+    width: 100%;
+    font-size: 1em;
+  }
+  .landing-page-image > img {
+    width: 50%;
+  }
+  .ig-ad > h3 {
+    font-size: 1em;
+  }
+  .ig-ad > button {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav > img {
+    width: 10%;
+  }
+  nav > div {
+    display: none;
+  }
+  nav > button {
+    display: inline-block;
+  }
+  footer > h3 {
+    font-size: 0.8em;
+  }
+  .landing-page-buttons > a > button {
+    width: 35vw;
+    font-size: 0.9em;
+  }
+  .ig-ad > h3 {
+    margin-bottom: 2vh;
+    width: 110%;
+    font-weight: 800;
+  }
+  .ig-ad > button {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ig-ad > h3 {
+    font-size: 0.8em;
+  }
+  .ig-ad > button {
+    width: 60%;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 375px) {
+  nav > img {
+    width: 12%;
+  }
+  footer > h3 {
+    font-size: 0.7em;
+  }
+  .landing-page-text {
+    width: 100%;
+  }
+  .landing-page-text > h2 {
+    font-size: 0.9em;
+  }
+  .landing-page-image > img {
+    width: 110%;
+  }
+  .landing-page-buttons > a > button {
+    width: 45vw;
+    font-weight: 800;
+  }
+}
+@media screen and (max-width: 360px) {
+  main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 270px) {
+  nav,
+  .big,
+  .landing-page,
+  .landing-page-buttons,
+  .ig-ad,
+  footer {
+    display: none;
+  }
+  .no-show {
+    display: inline-flex;
+  }
+}
