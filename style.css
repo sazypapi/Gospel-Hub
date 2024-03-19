@@ -218,11 +218,6 @@ footer > h6 {
   display: none;
 }
 /* MEDIA QUERY  */
-@media screen and (max-width: 900px) {
-  .landing-page-buttons > a > button {
-    width: 20vw;
-  }
-}
 @media screen and (max-width: 730px) {
   .landing-page-text > h2 {
     font-size: 1.2em;
@@ -249,6 +244,7 @@ footer > h6 {
     justify-content: center;
     height: max-content;
     text-align: center;
+    height: 90vh;
   }
   main {
     width: 90%;

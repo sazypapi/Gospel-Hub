@@ -1,0 +1,212 @@
+@import url("https://fonts.cdnfonts.com/css/azonix");
+@import url("https://fonts.cdnfonts.com/css/cocosharp-trial");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+/* NAVBAR */
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 10vh;
+}
+nav > img {
+  width: 4%;
+}
+nav > div > a {
+  text-decoration: none;
+  font-family: "Azonix", sans-serif;
+  color: black;
+  margin-left: 5vw;
+  font-weight: 300;
+  font-size: 0.9em;
+  transition: all;
+}
+nav > div > a:hover {
+  border-bottom: 2px solid black;
+}
+/* PHONE NAVBAR */
+.big {
+  height: 100vh;
+  width: 70%;
+  position: fixed;
+  top: 0;
+  margin-left: 10%;
+  right: -90%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: gainsboro;
+  transition: 0.3s ease;
+}
+.big.active {
+  right: 0;
+}
+.big > a {
+  font-family: "Azonix", sans-serif;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 4vh;
+}
+.big > p {
+  font-family: "Azonix", sans-serif;
+  text-align: center;
+  margin-top: 50vh;
+}
+.remove-hamburger {
+  margin-top: -3vh;
+  background: none;
+  border: none;
+  font-weight: 1000;
+  font-size: 2em;
+  margin-bottom: 5vh;
+  text-align: right;
+}
+nav > button {
+  background: none;
+  border: none;
+  font-weight: 1000;
+  font-size: 3em;
+  display: none;
+}
+/* PLAYLIST*/
+.playlist {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: rgba(214, 212, 212, 0.849);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 1rem;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+.playlist-cover {
+  flex: 50%;
+}
+.playlist-cover > img {
+  width: 60%;
+}
+.playlist-text {
+  font-family: "Azonix", sans-serif;
+  flex: 50%;
+}
+.playlist-text > h3 {
+  /* width: 70%; */
+  line-height: 5vh;
+}
+.playlist-text > a > button {
+  background-color: black;
+  color: white;
+  border: 0.2rem solid black;
+  padding: 0.4rem 1.4rem;
+  font-weight: 900;
+  /* font-family: "CocoSharp Trial", sans-serif; */
+  font-family: "Azonix", sans-serif;
+
+  font-size: 1em;
+}
+/* MORE TO COME */
+.more-to-come {
+  width: 70%;
+  border: 0.1rem solid black;
+  font-family: "Azonix", sans-serif;
+  padding: 1rem;
+  margin: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.more-to-come > h3 {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+.more-to-come > a > button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: 900;
+  font-size: 1em;
+  padding: 0.3rem 1rem;
+  font-family: "CocoSharp Trial", sans-serif;
+}
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2rem 2rem 0;
+}
+footer > h3 {
+  font-family: "CocoSharp Trial", sans-serif;
+  border-bottom: silver 0.5vh solid;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+footer > section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+footer > section > a > img {
+  width: 25%;
+}
+footer > h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.no-show {
+  display: none;
+}
+/* MEDIAQUERY */
+@media screen and (max-width: 650px) {
+  nav > img {
+    width: 5%;
+  }
+  nav > div > a {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav > img {
+    width: 10%;
+  }
+  nav > div {
+    display: none;
+  }
+  nav > button {
+    display: inline-block;
+  }
+  footer > h3 {
+    font-size: 0.8em;
+  }
+}
