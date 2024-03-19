@@ -244,10 +244,9 @@ footer > h6 {
     justify-content: center;
     height: max-content;
     text-align: center;
-    height: 90vh;
+    height: 90%;
     align-items: center;
     align-content: center;
-    background-color: red;
   }
   main {
     width: 90%;
@@ -264,7 +263,7 @@ footer > h6 {
     width: 100%;
   }
   .landing-page-image > img {
-    width: 80%;
+    /* width: 80%; */
   }
   .ig-ad > h3 {
     font-size: 1em;
