@@ -243,9 +243,11 @@ footer > h6 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 90vh;
+    height: max-content;
     align-items: center;
     align-content: center;
+    margin-bottom: 10vh;
+    height: 80vh;
   }
   main {
     width: 90%;
@@ -262,7 +264,7 @@ footer > h6 {
     width: 100%;
   }
   .landing-page-image > img {
-    /* width: 80%; */
+    width: 100%;
   }
   .ig-ad > h3 {
     font-size: 1em;
