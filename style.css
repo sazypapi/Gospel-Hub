@@ -242,9 +242,8 @@ footer > h6 {
   .landing-page {
     flex-direction: column;
     justify-content: center;
-    height: max-content;
     text-align: center;
-    height: 90%;
+    height: 90vh;
     align-items: center;
     align-content: center;
   }
