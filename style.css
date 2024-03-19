@@ -245,6 +245,8 @@ footer > h6 {
     height: max-content;
     text-align: center;
     height: 90vh;
+    align-items: center;
+    align-content: center;
   }
   main {
     width: 90%;
