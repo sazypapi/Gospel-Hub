@@ -151,24 +151,24 @@ nav > button {
   width: 100%;
   border: 0.1rem solid black;
   font-family: "Azonix", sans-serif;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 10vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.more-to-come > h3 {
+.more-to-come > h5 {
   text-align: center;
   margin-bottom: 3vh;
-  line-height: 5vh;
-  font-size: 1em;
+  line-height: 3vh;
+  /* font-size: 1em; */
 }
 .more-to-come > a > button {
   background-color: black;
   color: white;
   border: none;
   font-weight: 900;
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 0.3rem 1rem;
   font-family: "CocoSharp Trial", sans-serif;
 }
@@ -257,6 +257,12 @@ footer > h6 {
   nav > div > a {
     font-size: 0.7em;
   }
+  .more-to-come > h5 {
+    font-size: 0.6em;
+  }
+  .more-to-come > a > button {
+    font-size: 0.5em;
+  }
 }
 @media screen and (max-width: 615px) {
   .playlist-cover > img {
@@ -278,10 +284,12 @@ footer > h6 {
     flex-direction: column;
     align-items: center;
     align-content: center;
+    padding: 1rem;
+    margin-bottom: 5vh;
   }
   .playlist-cover > img {
     width: 80vw;
-    height: 20vh;
+    height: 25vh;
   }
   .playlist-cover {
     margin-bottom: 1vh;
@@ -290,13 +298,14 @@ footer > h6 {
     align-items: center;
     align-content: center;
     padding: 0.2rem;
-    width: 120%;
+    width: 110%;
   }
   .playlist-text > h3 {
     text-align: center;
     font-size: 0.9em;
     line-height: 4vh;
     width: 100%;
+    margin-bottom: none;
   }
   .playlist-text > a > button {
     font-size: 0.8em;
