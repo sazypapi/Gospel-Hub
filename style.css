@@ -20,6 +20,17 @@ main {
 }
 /* NAVBAR */
 nav {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 2vh;
+  position: fixed;
+  top: 0;
+}
+nav > section {
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -27,14 +38,14 @@ nav {
   align-content: center;
   height: 10vh;
 }
-nav > a > img {
+nav > section > a > img {
   width: 40%;
 }
-nav > a {
+nav > section > a {
   width: 10%;
   /* border: 2px solid black; */
 }
-nav > div > a {
+nav > section > div > a {
   text-decoration: none;
   font-family: "Azonix", sans-serif;
   color: black;
@@ -43,7 +54,7 @@ nav > div > a {
   font-size: 0.8em;
   transition: all;
 }
-nav > div > a:hover {
+nav > section > div > a:hover {
   border-bottom: 2px solid black;
 }
 /* PHONE NAVBAR */
@@ -82,8 +93,9 @@ nav > div > a:hover {
   font-size: 2em;
   margin-bottom: 5vh;
   text-align: right;
+  color: black;
 }
-nav > button {
+nav > section > button {
   background: none;
   border: none;
   font-weight: 1000;
@@ -92,7 +104,7 @@ nav > button {
 }
 /* LANDING PAGE */
 .landing-page {
-  margin-top: 5vh;
+  margin-top: 15vh;
   height: 60vh;
   width: 100%;
   display: flex;
@@ -278,34 +290,28 @@ footer > h6 {
 }
 @media screen and (max-width: 500px) {
   nav {
+    width: 100%;
+  }
+  nav > section {
     width: 90%;
   }
-  nav > a > img {
+  main {
+    width: 90%;
+  }
+  nav > section > a > img {
     width: 60%;
   }
-  nav > a {
+  nav > section > a {
     width: 15%;
   }
-  nav > div {
+  nav > section > div {
     display: none;
   }
-  nav > button {
+  nav > section button {
     display: inline-block;
   }
   footer > h3 {
     font-size: 0.8em;
-  }
-  .landing-page-buttons > a > button {
-    width: 35vw;
-    font-size: 0.9em;
-  }
-  .ig-ad > h3 {
-    margin-bottom: 2vh;
-    width: 110%;
-    font-weight: 800;
-  }
-  .landing-page-image > img {
-    width: 90%;
   }
 }
 @media screen and (max-width: 390px) {

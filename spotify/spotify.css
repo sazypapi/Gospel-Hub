@@ -1,5 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/azonix");
 @import url("https://fonts.cdnfonts.com/css/cocosharp-trial");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rowdies:wght@300;400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -21,6 +23,17 @@ main {
 }
 /* NAVBAR */
 nav {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 2vh;
+  position: fixed;
+  top: 0;
+}
+nav > section {
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -28,14 +41,14 @@ nav {
   align-content: center;
   height: 10vh;
 }
-nav > a > img {
+nav > section > a > img {
   width: 40%;
 }
-nav > a {
+nav > section > a {
   width: 10%;
   /* border: 2px solid black; */
 }
-nav > div > a {
+nav > section > div > a {
   text-decoration: none;
   font-family: "Azonix", sans-serif;
   color: black;
@@ -44,7 +57,7 @@ nav > div > a {
   font-size: 0.8em;
   transition: all;
 }
-nav > div > a:hover {
+nav > section > div > a:hover {
   border-bottom: 2px solid black;
 }
 /* PHONE NAVBAR */
@@ -85,7 +98,7 @@ nav > div > a:hover {
   text-align: right;
   color: black !important;
 }
-nav > button {
+nav > section > button {
   background: none;
   border: none;
   font-weight: 1000;
@@ -138,7 +151,9 @@ nav > button {
   padding: 0.4rem 1rem;
   font-size: 1.1em;
   font-weight: 900;
-  font-family: "CocoSharp Trial", sans-serif;
+  /* font-family: "CocoSharp Trial", sans-serif; */
+  /* font-family: "Archivo Black", sans-serif; */
+  font-family: "Rowdies", sans-serif;
   transition: all;
   transition-duration: 0.3s;
 }
@@ -246,19 +261,19 @@ footer > h6 {
   }
 }
 @media screen and (max-width: 730px) {
-  nav > a > img {
+  nav > section > a > img {
     width: 50%;
   }
 }
 @media screen and (max-width: 650px) {
-  nav > img {
+  nav > section > img {
     width: 5%;
   }
-  nav > div > a {
+  nav > section > div > a {
     font-size: 0.7em;
   }
   .more-to-come > h5 {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
   .more-to-come > a > button {
     font-size: 0.5em;
@@ -289,7 +304,7 @@ footer > h6 {
   }
   .playlist-cover > img {
     width: 80vw;
-    height: 25vh;
+    height: 30vh;
   }
   .playlist-cover {
     margin-bottom: 1vh;
@@ -315,21 +330,24 @@ footer > h6 {
 }
 @media screen and (max-width: 500px) {
   nav {
+    width: 100%;
+  }
+  nav > section {
     width: 90%;
   }
   main {
     width: 90%;
   }
-  nav > a > img {
+  nav > section > a > img {
     width: 60%;
   }
-  nav > a {
+  nav > section > a {
     width: 15%;
   }
-  nav > div {
+  nav > section > div {
     display: none;
   }
-  nav > button {
+  nav > section button {
     display: inline-block;
   }
   footer > h3 {
