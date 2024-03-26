@@ -32,6 +32,7 @@ nav {
   margin-bottom: 2vh;
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
 nav > section {
   width: 80%;
@@ -56,6 +57,8 @@ nav > section > div > a {
   font-weight: 300;
   font-size: 0.8em;
   transition: all;
+  transition-duration: 0.2s;
+  border-bottom: 2px solid transparent;
 }
 nav > section > div > a:hover {
   border-bottom: 2px solid black;

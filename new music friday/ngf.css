@@ -2,6 +2,7 @@
 @import url("https://fonts.cdnfonts.com/css/cocosharp-trial");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -70,7 +71,6 @@ nav > section > div > a:hover {
 /* PHONE NAVBAR */
 .big {
   margin-top: 10vh;
-  z-index: 1000;
   height: 100vh;
   width: 70%;
   position: fixed;
@@ -82,6 +82,7 @@ nav > section > div > a:hover {
   padding: 1rem;
   background-color: gainsboro;
   transition: 0.3s ease;
+  z-index: 1000;
 }
 .big.active {
   right: 0;
@@ -110,61 +111,54 @@ nav > section > button {
   display: none;
   color: black;
 }
-/* PLAYLIST*/
-.playlist {
+/* NGF */
+.ngf {
+  margin-top: 15vh;
   display: flex;
-  width: 100%;
   justify-content: space-around;
   align-items: center;
+  background-image: url(/img/New\ Muisc\ Friday\ Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   align-content: center;
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  padding: 2rem 2rem 6vh;
-  /* background-color: rgb(239, 239, 239); */
-  margin-bottom: 6vh;
-  transition: all;
-  transition-duration: 0.3s;
-  border-bottom: 0.4rem solid transparent;
 }
-.playlist:hover {
-  border-bottom: 0.4rem solid black;
+.ngf-cover {
+  width: 40%;
 }
-.playlist-cover {
-  flex: 50%;
+.ngf-cover > img {
+  width: 90%;
 }
-.playlist-cover > img {
-  width: 60%;
+.ngf-text {
+  width: 50%;
 }
-.playlist-text {
-  flex: 40%;
-  font-family: "Azonix", sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-.playlist-text > h3 {
-  line-height: 5vh;
-  font-size: 1.5em;
-  margin-bottom: 5vh;
-}
-.playlist-text > a > button {
-  background: none;
-  border: 0.2rem solid black;
-  padding: 0.4rem 1rem;
-  font-size: 1.1em;
-  font-weight: 900;
-  color: black;
-  /* font-family: "CocoSharp Trial", sans-serif; */
-  /* font-family: "Archivo Black", sans-serif; */
-  font-family: "Rowdies", sans-serif;
-  transition: all;
-  transition-duration: 0.3s;
-}
-.playlist-text > a > button:hover {
-  background-color: black;
+.ngf-text > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
   color: white;
+  font-size: 1.7em;
+  line-height: 6vh;
+  font-style: italic;
+  margin-bottom: 2vh;
+}
+.ngf-text > h3 {
+  font-family: "Azonix", sans-serif;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 4vh;
+}
+.ngf-text > a > button {
+  background-image: linear-gradient(to bottom right, #005f33, #00773e, #007e41);
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  padding: 0.4rem 1rem;
+  font-weight: 1000;
+  color: white;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
 }
 /* MORE TO COME */
 .more-to-come {
@@ -196,7 +190,7 @@ nav > section > button {
 footer {
   background-color: black;
   color: white;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,42 +222,45 @@ footer > h6 {
 .no-show {
   display: none;
 }
-/* MEDIAQUERY */
-
-@media screen and (max-width: 900px) {
-  .playlist-text > h3 {
-    font-size: 1.2em;
+/* MEDIA QUERY */
+@media screen and (max-width: 930px) {
+  .ngf-cover {
+    width: 45%;
   }
-  .playlist-text > a > button {
-    font-size: 0.9em;
+  .ngf-cover > img {
+    width: 90%;
   }
-}
-@media screen and (max-width: 800px) {
-  .playlist-text > h3 {
+  .ngf-text {
+    width: 55%;
+  }
+  .ngf-text > h2 {
+    font-size: 1.5em;
+  }
+  .ngf-text > h3 {
     font-size: 1em;
   }
-}
-@media screen and (max-width: 740px) {
-  .playlist {
-    margin-bottom: 15vh;
-  }
-  .playlist-text > a > button {
+  .ngf-text > a > button {
     font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 750px) {
+  .ngf {
+    padding: 1rem;
+  }
+  .ngf-text > h2 {
+    font-size: 1.3em;
+    line-height: 4.5vh;
+  }
+  .ngf-text > h3 {
+    font-size: 0.9em;
+    margin-bottom: 3vh;
+  }
+  .ngf-text > a > button {
+    font-size: 0.8em;
     padding: 0.3rem 1rem;
   }
-  .playlist-cover {
-    flex: 50%;
-  }
-  .playlist-cover > img {
-    width: 80%;
-  }
-  .playlist-text {
-    flex: 50%;
-  }
-  .playlist-text > h3 {
-    font-size: 0.9em;
-    width: 100%;
-    margin-bottom: 3vh;
+  .ngf-cover > img {
+    width: 95%;
   }
 }
 @media screen and (max-width: 730px) {
@@ -278,6 +275,7 @@ footer > h6 {
   nav > section > div > a {
     font-size: 0.7em;
   }
+
   .more-to-come > h5 {
     font-size: 0.7em;
   }
@@ -285,51 +283,53 @@ footer > h6 {
     font-size: 0.5em;
   }
 }
-@media screen and (max-width: 615px) {
-  .playlist-cover > img {
-    width: 90%;
+@media screen and (max-width: 630px) {
+  .ngf-text > h2 {
+    font-size: 1.2em;
   }
-  .playlist-text > h3 {
+  .ngf-text > h3 {
     font-size: 0.8em;
-    width: 110%;
   }
-  .playlist-text > a > button {
+  .ngf-text > a > button {
     font-size: 0.7em;
-    padding: 0.3rem 0.5rem;
+    padding: 0.3rem 0.8rem;
   }
 }
-@media screen and (max-width: 520px) {
-  .playlist {
+@media screen and (max-width: 575px) {
+  .ngf {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-    padding: 1rem;
-    margin-bottom: 5vh;
   }
-  .playlist-cover > img {
+  .ngf-cover {
     width: 80vw;
-    height: 35vh;
   }
-  .playlist-cover {
-    margin-bottom: 1vh;
+  .ngf-cover > img {
+    width: 80vw;
+    height: 50vh;
   }
-  .playlist-text {
-    align-items: center;
-    align-content: center;
-    padding: 0.2rem;
-    width: 110%;
-  }
-  .playlist-text > h3 {
-    text-align: center;
-    font-size: 0.9em;
-    line-height: 4vh;
+  .ngf-text {
+    margin-top: 5vh;
     width: 100%;
-    margin-bottom: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
   }
-  .playlist-text > a > button {
-    font-size: 0.8em;
-    font-weight: 1000;
-    padding: 0.3rem 1rem;
+  .ngf-text > h2 {
+    font-size: 1.5em;
+    line-height: 5vh;
+  }
+  .ngf-text > h3 {
+    font-size: 1em;
+  }
+  .ngf-text > a > button {
+    font-size: 0.9em;
+    padding: 0.35rem 1rem;
   }
 }
 @media screen and (max-width: 500px) {
