@@ -113,7 +113,7 @@ nav > section > button {
 }
 /* NGF */
 .ngf {
-  margin-top: 15vh;
+  margin-top: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -296,6 +296,9 @@ footer > h6 {
   }
 }
 @media screen and (max-width: 575px) {
+  main {
+    width: 90%;
+  }
   .ngf {
     flex-direction: column;
     justify-content: center;
@@ -329,7 +332,7 @@ footer > h6 {
   }
   .ngf-text > a > button {
     font-size: 0.9em;
-    padding: 0.35rem 1rem;
+    padding: 0.4rem 1rem;
   }
 }
 @media screen and (max-width: 500px) {
