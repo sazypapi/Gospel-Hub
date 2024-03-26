@@ -306,7 +306,7 @@ footer > h6 {
   }
   .ngf-cover > img {
     width: 80vw;
-    height: 50vh;
+    height: 40vh;
   }
   .ngf-text {
     margin-top: 5vh;
@@ -321,8 +321,8 @@ footer > h6 {
     padding: 1rem;
   }
   .ngf-text > h2 {
-    font-size: 1.5em;
-    line-height: 5vh;
+    font-size: 1.3em;
+    line-height: 4vh;
   }
   .ngf-text > h3 {
     font-size: 1em;
