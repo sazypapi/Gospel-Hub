@@ -178,13 +178,17 @@ nav > section > button {
   /* font-size: 1em; */
 }
 .more-to-come > a > button {
-  background-color: black;
-  color: white;
-  border: none;
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
   font-weight: 900;
   font-size: 0.8em;
   padding: 0.3rem 1rem;
   font-family: "CocoSharp Trial", sans-serif;
+}
+.more-to-come > a > button:hover {
+  background-color: black;
+  color: white;
 }
 /* FOOTER */
 footer {
