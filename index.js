@@ -35,7 +35,7 @@ window.addEventListener("scroll", () => {
 
   if (currentScroll > lastScrollTop && currentScroll > 0) {
     // Scrolling down, hide navbar
-    document.querySelector("navbar").style.transform = "translateY(-100%)";
+    document.querySelector("navbar").style.transform = "translateY(-10vh)";
   } else {
     // Scrolling up, show navbar
     document.querySelector("navbar").style.transform = "translateY(0)";
