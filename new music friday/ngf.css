@@ -106,10 +106,13 @@ nav > section > div > a:hover {
 nav > section > button {
   background: none;
   border: none;
-  font-weight: 1000;
-  font-size: 2em;
   display: none;
   color: black;
+  width: fit-content;
+  width: 10%;
+}
+nav > section > button > img {
+  width: 90%;
 }
 /* NGF */
 .ngf {
