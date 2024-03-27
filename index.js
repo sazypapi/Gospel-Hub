@@ -16,15 +16,14 @@ remove.addEventListener("click", () => {
   hamburger.style.display = "inline-block";
 });
 
-let prevScrollPos = window.pageYOffset;
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
+// let prevScrollPos = window.pageYOffset;
+// window.onscroll = function () {
+//   let currentScrollPos = window.pageYOffset;
 
-  if (prevScrollPos > currentScrollPos) {
-    navbar.style.top = "0";
-  } else {
-    navbar.style.top = "-10vh"; // Adjust this value based on your navbar height
-  }
+//   if (prevScrollPos > currentScrollPos) {
+//     navbar.style.top = "0";
+//   } else {
+//     navbar.style.top = "-10vh"; // Adjust this value based on your navbar height
+//   }
 
-  prevScrollPos = currentScrollPos;
-};
+//   prevScrollPos = currentScrollPos;
