@@ -185,18 +185,14 @@ nav > section > button {
   height: max-content;
   font-family: "CocoSharp Trial", sans-serif;
   color: white;
-  background-color: black;
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  background-color: black;
   font-size: 1em;
   font-weight: 1000;
   padding: 0.3rem 1.5rem;
 }
 .ig-ad > a > button:hover {
-  background-color: black;
+  background-color: rgb(49, 48, 48);
   color: white;
   border: black;
 }
