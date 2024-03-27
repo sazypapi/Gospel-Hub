@@ -16,7 +16,9 @@ body {
   justify-content: center;
   align-content: center;
   overscroll-behavior-y: contain; /* Prevent vertical bouncing */
-  background-color: orange;
+  background-color: aliceblue;
+  overflow-y: scroll; /* Allow vertical scrolling */
+  overscroll-behavior-y: contain; /* Prevent excessive bouncing */
 }
 main {
   display: flex;
