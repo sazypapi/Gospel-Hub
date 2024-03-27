@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-content: center;
   overscroll-behavior-y: contain; /* Prevent vertical bouncing */
-  background-color: red;
+  background-color: yellow;
 }
 main {
   display: flex;
