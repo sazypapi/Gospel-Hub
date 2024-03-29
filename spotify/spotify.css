@@ -339,7 +339,7 @@ footer > h6 {
     padding: 0.3rem 1rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
   nav {
     width: 100%;
   }

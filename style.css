@@ -292,7 +292,7 @@ footer > h6 {
     font-size: 0.9em;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
   nav {
     width: 100%;
   }
