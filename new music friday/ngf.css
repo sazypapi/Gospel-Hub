@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rowdies:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -152,16 +153,43 @@ nav > section > button > img {
   font-weight: 800;
   margin-bottom: 4vh;
 }
-.ngf-text > a > button {
-  background-image: linear-gradient(to bottom right, #005f33, #00773e, #007e41);
-  background-color: transparent;
-  border: none;
-  font-size: 1em;
-  padding: 0.4rem 1rem;
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+.buttons > a > button {
+  font-size: 0.9em;
   font-weight: 1000;
   color: white;
   font-style: italic;
   font-family: "Montserrat", sans-serif;
+  width: 20vw;
+  height: 6vh;
+}
+.spotify {
+  background-color: #1db954;
+  border: none;
+  margin-bottom: 1vh;
+}
+.apple-music {
+  background-color: #fc3c44;
+  border: none;
+  margin-top: 1vh;
+}
+
+.otf {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  margin-top: 2vh;
+}
+.otf > h3 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 1.5em;
 }
 /* MORE TO COME */
 .more-to-come {
@@ -269,6 +297,9 @@ footer > h6 {
   .ngf-cover > img {
     width: 95%;
   }
+  .otf > h3 {
+    font-size: 1.2em;
+  }
 }
 @media screen and (max-width: 730px) {
   nav > section > a > img {
@@ -284,10 +315,11 @@ footer > h6 {
   }
 
   .more-to-come > h5 {
-    font-size: 0.7em;
+    font-size: 0.8em;
+    line-height: 4vh;
   }
   .more-to-come > a > button {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 }
 @media screen and (max-width: 630px) {
@@ -316,7 +348,7 @@ footer > h6 {
   }
   .ngf-cover > img {
     width: 80vw;
-    height: 40vh;
+    height: 50vh;
   }
   .ngf-text {
     margin-top: 5vh;
@@ -337,9 +369,8 @@ footer > h6 {
   .ngf-text > h3 {
     font-size: 1em;
   }
-  .ngf-text > a > button {
-    font-size: 0.9em;
-    padding: 0.4rem 1rem;
+  .buttons > a > button {
+    width: 25vw;
   }
 }
 @media screen and (max-width: 560px) {
@@ -366,6 +397,30 @@ footer > h6 {
   }
   footer > h3 {
     font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 524px) {
+  .buttons > a > button {
+    width: 35vw;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .ngf-cover > img {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 300px) {
+  .buttons > a > button {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  nav > section > a {
+    width: 15%;
+  }
+  nav > section > a > img {
+    width: 80%;
   }
 }
 @media screen and (max-width: 280px) {

@@ -365,6 +365,14 @@ footer > h6 {
     font-size: 0.8em;
   }
 }
+@media screen and (max-width: 375px) {
+  nav > section > a {
+    width: 15%;
+  }
+  nav > section > a > img {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 280px) {
   nav,
   main,
