@@ -286,10 +286,11 @@ footer > h6 {
     font-size: 0.7em;
   }
   .more-to-come > h5 {
-    font-size: 0.7em;
+    font-size: 0.8em;
+    line-height: 4vh;
   }
   .more-to-come > a > button {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 }
 @media screen and (max-width: 615px) {
