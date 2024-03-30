@@ -3,6 +3,9 @@ const remove = document.querySelector(".remove-hamburger");
 const big = document.querySelector(".big");
 const body = document.querySelector("body");
 const navbar = document.querySelector("nav");
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
+injectSpeedInsights();
 hamburger.addEventListener("click", () => {
   big.classList.add("active");
   bodyScrollLockUpgrade.disableBodyScroll(body);
