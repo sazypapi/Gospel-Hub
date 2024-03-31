@@ -176,6 +176,7 @@ nav > section > button > img {
   border-radius: 5px;
   align-items: center;
   margin-bottom: 10vh;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .ig-ad > h3 {
   font-family: "CocoSharp Trial", sans-serif;
@@ -212,6 +213,7 @@ footer {
   align-items: center;
   align-content: center;
   padding: 2rem 2rem 0;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 footer > h3 {
   font-family: "CocoSharp Trial", sans-serif;
