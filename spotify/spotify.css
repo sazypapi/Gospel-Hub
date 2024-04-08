@@ -250,63 +250,7 @@ footer > h6 {
     font-size: 1em;
   }
 }
-@media screen and (max-width: 740px) {
-  .playlist {
-    margin-bottom: 15vh;
-  }
-  .playlist-text > a > button {
-    font-size: 0.9em;
-    padding: 0.3rem 1rem;
-  }
-  .playlist-cover {
-    flex: 50%;
-  }
-  .playlist-cover > img {
-    width: 80%;
-  }
-  .playlist-text {
-    flex: 50%;
-  }
-  .playlist-text > h3 {
-    font-size: 0.9em;
-    width: 100%;
-    margin-bottom: 3vh;
-  }
-}
-@media screen and (max-width: 730px) {
-  nav > section > a > img {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 650px) {
-  nav > section > img {
-    width: 5%;
-  }
-  nav > section > div > a {
-    font-size: 0.7em;
-  }
-  .more-to-come > h5 {
-    font-size: 0.8em;
-    line-height: 4vh;
-  }
-  .more-to-come > a > button {
-    font-size: 0.7em;
-  }
-}
-@media screen and (max-width: 615px) {
-  .playlist-cover > img {
-    width: 90%;
-  }
-  .playlist-text > h3 {
-    font-size: 0.8em;
-    width: 110%;
-  }
-  .playlist-text > a > button {
-    font-size: 0.7em;
-    padding: 0.3rem 0.5rem;
-  }
-}
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
   .playlist {
     flex-direction: column;
     align-items: center;
@@ -316,7 +260,7 @@ footer > h6 {
   }
   .playlist-cover > img {
     width: 80vw;
-    height: 35vh;
+    height: 40vh;
   }
   .playlist-cover {
     margin-bottom: 1vh;
@@ -325,7 +269,7 @@ footer > h6 {
     align-items: center;
     align-content: center;
     padding: 0.2rem;
-    width: 110%;
+    width: 100%;
   }
   .playlist-text > h3 {
     text-align: center;
@@ -339,10 +283,9 @@ footer > h6 {
     font-weight: 1000;
     padding: 0.3rem 1rem;
   }
-}
-@media screen and (max-width: 560px) {
   nav {
     width: 100%;
+    height: 8vh;
   }
   nav > section {
     width: 90%;
@@ -351,7 +294,7 @@ footer > h6 {
     width: 90%;
   }
   nav > section > a > img {
-    width: 60%;
+    width: 30%;
   }
   nav > section > a {
     width: 15%;
@@ -359,19 +302,61 @@ footer > h6 {
   nav > section > div {
     display: none;
   }
-  nav > section button {
+  nav > section > button {
     display: inline-block;
+  }
+  nav > section > button > img {
+    width: 50%;
   }
   footer > h3 {
     font-size: 0.8em;
   }
 }
-@media screen and (max-width: 375px) {
-  nav > section > a {
-    width: 15%;
+@media screen and (max-width: 650px) {
+  .more-to-come > h5 {
+    font-size: 0.8em;
+    line-height: 4vh;
+  }
+  .more-to-come > a > button {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav > section > a > img {
+    width: 40%;
+  }
+  nav > section > button > img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 485px) {
+  nav > section > a > img {
+    width: 50%;
+  }
+  nav > section > button > img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 425px) {
+  nav > section > a > img {
+    width: 60%;
+  }
+  nav > section > button > img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .ig-ad > h3 {
+    font-size: 0.9em;
+  }
+  .ig-ad > a > button {
+    font-size: 0.8em;
   }
   nav > section > a > img {
-    width: 80%;
+    width: 60%;
+  }
+  nav > section > button > img {
+    width: 90%;
   }
 }
 @media screen and (max-width: 280px) {
