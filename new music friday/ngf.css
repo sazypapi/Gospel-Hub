@@ -124,7 +124,7 @@ nav > section > button > img {
   background-image: url(/img/ngf\ for\ king\ and\ country.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   align-content: center;
@@ -142,7 +142,7 @@ nav > section > button > img {
   font-family: "Montserrat", sans-serif;
   font-weight: 1000;
   color: white;
-  font-size: 1.7em;
+  font-size: 1.5em;
   line-height: 6vh;
   font-style: italic;
   margin-bottom: 2vh;
@@ -278,6 +278,85 @@ footer > h6 {
     font-size: 0.9em;
   }
 }
+@media screen and (max-width: 800px) {
+  .ngf-text > h2 {
+    font-size: 1.3em;
+    line-height: 4vh;
+  }
+  .buttons > a > button {
+    font-size: 0.8em;
+  }
+  .ngf-text > h3 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+  .ngf {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ngf-cover {
+    width: 80vw;
+  }
+  .ngf-cover > img {
+    width: 80vw;
+    height: 50vh;
+  }
+  .ngf-text {
+    margin-top: 5vh;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+  }
+  .ngf-text > h2 {
+    font-size: 1.3em;
+    line-height: 4vh;
+  }
+  .ngf-text > h3 {
+    font-size: 1em;
+  }
+  .buttons > a > button {
+    width: 25vw;
+  }
+  nav {
+    width: 100%;
+    height: 8vh;
+  }
+  nav > section {
+    width: 90%;
+  }
+  main {
+    width: 90%;
+  }
+  nav > section > a > img {
+    width: 30%;
+  }
+  nav > section > a {
+    width: 15%;
+  }
+  nav > section > div {
+    display: none;
+  }
+  nav > section > button {
+    display: inline-block;
+  }
+  nav > section > button > img {
+    width: 50%;
+  }
+  footer > h3 {
+    font-size: 0.8em;
+  }
+}
 @media screen and (max-width: 750px) {
   .ngf {
     padding: 1rem;
@@ -332,45 +411,6 @@ footer > h6 {
   .ngf-text > a > button {
     font-size: 0.7em;
     padding: 0.3rem 0.8rem;
-  }
-}
-@media screen and (max-width: 575px) {
-  main {
-    width: 90%;
-  }
-  .ngf {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .ngf-cover {
-    width: 80vw;
-  }
-  .ngf-cover > img {
-    width: 80vw;
-    height: 50vh;
-  }
-  .ngf-text {
-    margin-top: 5vh;
-    width: 100%;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 1rem;
-  }
-  .ngf-text > h2 {
-    font-size: 1.3em;
-    line-height: 4vh;
-  }
-  .ngf-text > h3 {
-    font-size: 1em;
-  }
-  .buttons > a > button {
-    width: 25vw;
   }
 }
 @media screen and (max-width: 560px) {
