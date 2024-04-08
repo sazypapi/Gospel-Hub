@@ -412,28 +412,15 @@ footer > h6 {
     padding: 0.3rem 0.8rem;
   }
 }
-@media screen and (max-width: 560px) {
-  nav {
-    width: 100%;
-  }
-  nav > section {
-    width: 90%;
-  }
-  main {
-    width: 90%;
-  }
+@media screen and (max-width: 600px) {
   nav > section > a > img {
+    width: 40%;
+  }
+  nav > section > button > img {
     width: 60%;
   }
-  nav > section > a {
-    width: 15%;
-  }
-  nav > section > div {
-    display: none;
-  }
-  nav > section button {
-    display: inline-block;
-  }
+}
+@media screen and (max-width: 560px) {
   footer > h3 {
     font-size: 0.8em;
   }
@@ -444,22 +431,29 @@ footer > h6 {
     font-size: 0.8em;
   }
 }
+@media screen and (max-width: 485px) {
+  nav > section > a > img {
+    width: 50%;
+  }
+  nav > section > button > img {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 425px) {
   .ngf-cover > img {
     height: 40vh;
   }
+  nav > section > a > img {
+    width: 60%;
+  }
+  nav > section > button > img {
+    width: 80%;
+  }
 }
-@media screen and (max-width: 300px) {
+
+s@media screen and (max-width: 300px) {
   .buttons > a > button {
     width: 40vw;
-  }
-}
-@media screen and (max-width: 375px) {
-  nav > section > a {
-    width: 15%;
-  }
-  nav > section > a > img {
-    width: 80%;
   }
 }
 @media screen and (max-width: 280px) {
