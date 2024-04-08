@@ -349,12 +349,12 @@ footer > h6 {
   }
 }
 @media screen and (max-width: 375px) {
-  nav > section > a {
+  /* nav > section > a {
     width: 15%;
   }
   nav > section > a > img {
     width: 80%;
-  }
+  } */
   footer > h3 {
     font-size: 0.7em;
   }
