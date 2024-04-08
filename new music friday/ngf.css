@@ -319,7 +319,7 @@ footer > h6 {
     padding: 1rem;
   }
   .ngf-text > h2 {
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
   }
   .ngf-text > h3 {
     font-size: 1em;
