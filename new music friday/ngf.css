@@ -164,7 +164,8 @@ nav > section > button > img {
   font-style: italic;
   font-family: "Montserrat", sans-serif;
   width: 20vw;
-  height: 6vh;
+  height: max-content;
+  padding: 0.4rem 0;
 }
 .spotify {
   background-color: #1db954;
