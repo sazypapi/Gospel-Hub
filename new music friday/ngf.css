@@ -451,7 +451,7 @@ footer > h6 {
   }
 }
 
-s@media screen and (max-width: 300px) {
+@media screen and (max-width: 300px) {
   .buttons > a > button {
     width: 40vw;
   }
