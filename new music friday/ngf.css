@@ -298,9 +298,15 @@ footer > h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-items: center;
   }
   .ngf-cover {
-    width: 80vw;
+    margin-bottom: 1vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
   .ngf-cover > img {
     width: 80vw;
