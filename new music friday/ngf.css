@@ -121,7 +121,7 @@ nav > section > button > img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url(/img/NEW\ MUSIC\ FRIDAY\ \ Tee\ Supreme\ and\ Reblah\ background.jpg);
+  background-image: url(/img/NGF\ Sondae\ Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
@@ -131,6 +131,11 @@ nav > section > button > img {
 }
 .ngf-cover {
   width: 40%;
+}
+.ngf-cover > p {
+  font-family: "Azonix", sans-serif;
+  color: white;
+  font-size: 0.8em;
 }
 .ngf-cover > img {
   width: 90%;
@@ -307,6 +312,7 @@ footer > h6 {
     align-items: center;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
   }
   .ngf-cover > img {
     width: 80vw;
