@@ -260,7 +260,7 @@ footer > h6 {
   }
   .playlist-cover > img {
     width: 80vw;
-    height: 40vh;
+    height: 80vw;
   }
   .playlist-cover {
     margin-bottom: 1vh;
