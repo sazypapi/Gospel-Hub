@@ -112,8 +112,8 @@ nav > section > button > img {
 }
 /* LANDING PAGE */
 .landing-page {
-  margin-top: 10vh;
-  height: 60vh;
+  margin-top: 15vh;
+  /* height: 60vh; */
   width: 100%;
   display: flex;
   align-items: center;
