@@ -198,7 +198,7 @@ nav > section > button > img {
 }
 /* MORE TO COME */
 .more-to-come {
-  width: max-content;
+  width: 80%;
   /* padding: 0 2rem; */
   border: 0.1rem solid black;
   font-family: "Azonix", sans-serif;
