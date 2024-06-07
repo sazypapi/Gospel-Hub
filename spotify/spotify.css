@@ -182,7 +182,7 @@ nav > section > button > img {
 .more-to-come > h5 {
   text-align: center;
   margin-bottom: 3vh;
-  /* line-height: 3vh; */
+  line-height: 3vh;
   /* font-size: 1em; */
 }
 .more-to-come > a > button {
