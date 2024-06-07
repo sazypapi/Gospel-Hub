@@ -207,11 +207,12 @@ nav > section > button > img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* line-height: 3vh; */
 }
 .more-to-come > h5 {
   text-align: center;
   margin-bottom: 3vh;
-  /* line-height: 3vh; */
+  line-height: 3vh;
   /* font-size: 1em; */
 }
 .more-to-come > a > button {
