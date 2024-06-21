@@ -121,7 +121,7 @@ nav > section > button > img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url(/img/NGF\ Background\ JHP.jpg);
+  background-image: url(/img/NGF\ BACKGROUND\ FOR\ RO.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
@@ -136,6 +136,7 @@ nav > section > button > img {
   font-family: "Azonix", sans-serif;
   color: white;
   font-size: 0.8em;
+  margin-top: 1vh;
 }
 .ngf-cover > img {
   width: 90%;
