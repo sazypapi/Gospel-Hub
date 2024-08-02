@@ -99,11 +99,6 @@ nav > section > div > a:hover {
   text-align: center;
   margin-top: 50vh;
 }
-.remove-hamburger {
-  font-weight: 1000;
-  display: none;
-  font-size: 1.4em;
-}
 nav > section > button {
   background: none;
   border: none;
@@ -115,13 +110,18 @@ nav > section > button {
 nav > section > button > img {
   width: 90%;
 }
+.remove-hamburger {
+  font-weight: 1000;
+  display: none;
+  font-size: 1.4em;
+}
 /* NGF */
 .ngf {
   margin-top: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url(/img/Artboard\ 1.jpg);
+  background-image: url(/img/ngf\ chand.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
