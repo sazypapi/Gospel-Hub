@@ -318,8 +318,7 @@ footer > h6 {
     flex-direction: column;
   }
   .ngf-cover > img {
-    width: 80vw;
-    height: 40vh;
+    width: 100%;
   }
   .ngf-text {
     margin-top: 5vh;
