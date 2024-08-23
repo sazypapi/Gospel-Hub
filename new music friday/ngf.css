@@ -455,7 +455,7 @@ footer > h6 {
 }
 @media screen and (max-width: 425px) {
   .ngf-cover > img {
-    height: 40vh;
+    /* height: 40vh; */
   }
   nav > section > a > img {
     width: 60%;
