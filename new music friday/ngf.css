@@ -121,7 +121,7 @@ nav > section > button > img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url(/img/Artboard\ 1.jpg);
+  background-image: url(/img/Untitled-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
@@ -143,6 +143,9 @@ nav > section > button > img {
 }
 .ngf-text {
   width: 50%;
+}
+.ngf-span{
+  font-size: .8em;
 }
 .ngf-text > h2 {
   font-family: "Montserrat", sans-serif;
