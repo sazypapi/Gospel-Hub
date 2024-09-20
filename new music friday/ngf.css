@@ -130,9 +130,9 @@ nav > section > button > img {
   align-items: center;
   justify-content: center;
   align-content: center;
+  margin-top: 12vh;
 }
 .ngf {
-  margin-top: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
